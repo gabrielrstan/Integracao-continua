@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM jenkins
 MAINTAINER gabriel
 
 RUN apt-get update

@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER gabriel
 
 RUN apt-get update
-RUN apt-get install -y nginx
+RUN apt-get install nginx
 
 
 VOLUME /usr/share/nginx/html

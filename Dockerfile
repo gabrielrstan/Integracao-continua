@@ -1,4 +1,4 @@
-FROM ubuntux
+FROM ubunto
 MAINTAINER gabriel
 
 RUN apt-get update

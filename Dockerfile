@@ -4,6 +4,7 @@ MAINTAINER gabriel
 RUN apt-get update
 RUN apt-get install nginx -y
 RUN apt-get clean
+RUN git clone https://github.com/gabrielrstan/Integracao-continua.git
 
 VOLUME /usr/share/nginx/html
 VOLUME /etc/nginx

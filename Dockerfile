@@ -1,11 +1,9 @@
 FROM ubuntu
 MAINTAINER gabriel
 
-RUN apt-get update \
-    && apt-get install -y nginx \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    && echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get clean
 
 
 VOLUME /usr/share/nginx/html

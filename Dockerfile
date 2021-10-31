@@ -10,10 +10,6 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 VOLUME /usr/share/nginx/html
 VOLUME /etc/nginx
 
-EXPOSE 8080
+EXPOSE 8088
 
-
-
-
-EXPOSE 8080
 

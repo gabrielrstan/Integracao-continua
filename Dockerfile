@@ -8,9 +8,8 @@ RUN apt-get clean
 VOLUME /usr/share/nginx/html
 VOLUME /etc/nginx
 
-RUN cat index.html 
 
-COPY index.html /var/lib/docker/volumes/webserver_www/_data
+COPY index.html /var/lib/docker/volumes/webserver_www/_data .https://github.com/gabrielrstan/Integracao-continua.git
 
 EXPOSE 8088:80
 

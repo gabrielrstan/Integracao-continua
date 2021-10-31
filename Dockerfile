@@ -11,8 +11,7 @@ LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
 
 # Download certificate and key from the customer portal (https://account.f5.com)
 # and copy to the build context
-COPY nginx-repo.crt /etc/ssl/nginx/
-COPY nginx-repo.key /etc/ssl/nginx/
+
 
 VOLUME /usr/share/nginx/html
 VOLUME /etc/nginx

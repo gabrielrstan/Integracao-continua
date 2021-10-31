@@ -14,6 +14,9 @@ LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
 COPY nginx-repo.crt /etc/ssl/nginx/
 COPY nginx-repo.key /etc/ssl/nginx/
 
+VOLUME /usr/share/nginx/html
+VOLUME /etc/nginx
+
 RUN set -x \
 # Create nginx user/group first, to be consistent throughout Docker variants
     && addgroup --system --gid 101 nginx \

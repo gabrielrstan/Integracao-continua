@@ -9,7 +9,7 @@ RUN apt-get clean
 VOLUME /usr/share/nginx/html
 VOLUME /etc/nginx
 
-EXPOSE 8088
+EXPOSE 8088:80
 
 CMD ["nginx", "-g", "daemon off;"]
 

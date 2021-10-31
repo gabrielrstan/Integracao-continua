@@ -10,6 +10,5 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 EXPOSE 8080
 
-ENTRYPOINT [“/usr/sbin/nginx”]
 
 CMD [“start”, “-g”]
